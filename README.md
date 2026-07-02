@@ -2,6 +2,8 @@
 
 > **"I know that I know nothing."** — A skill that doesn't give answers. It helps you give birth to your own.
 
+
+**[中文](README.zh-CN.md)**
 [![Skill Type](https://img.shields.io/badge/type-process--skill-blue)](./SKILL.md)
 [![Scope](https://img.shields.io/badge/scope-logical--clarification-green)](./SKILL.md)
 [![Compatibility](https://img.shields.io/badge/compatible-superpowers%20%7C%20openclaw%20%7C%20claude--code-orange)](./SKILL.md)
