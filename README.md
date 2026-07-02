@@ -2,12 +2,12 @@
 
 > **"I know that I know nothing."** — A skill that doesn't give answers. It helps you give birth to your own.
 
-
-**[中文](README.zh-CN.md)**
 [![Skill Type](https://img.shields.io/badge/type-process--skill-blue)](./SKILL.md)
 [![Scope](https://img.shields.io/badge/scope-logical--clarification-green)](./SKILL.md)
 [![Compatibility](https://img.shields.io/badge/compatible-superpowers%20%7C%20openclaw%20%7C%20claude--code-orange)](./SKILL.md)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
+
+**[中文](README.zh-CN.md)**
 
 A strict, state-machine-driven Socratic interrogation skill for AI agents. When a user's reasoning contains logical gaps, hidden premises, or missing information, **Maieutics** refuses to answer. Instead, it asks one disciplined question at a time until the user sees the structure of their own thinking — including its strengths and its fractures.
 
