@@ -118,7 +118,7 @@ Install directly from Git:
 openclaw skills install git:Bingtuu/maieutics
 ```
 
-Or install via ClawHub:
+Or install via ClawHub (once published):
 
 ```bash
 clawhub install Bingtuu/maieutics
@@ -136,9 +136,24 @@ cp -r maieutics /path/to/your/workspace/skills/
 cp -r maieutics ~/.openclaw/skills/
 ```
 
-### Claude Code / Generic
+### Claude Code
 
-Copy the contents of [`SKILL.md`](./SKILL.md) into your system prompt, project `CLAUDE.md`, or custom instructions. Ensure the YAML frontmatter is preserved if your orchestrator supports it.
+Install as a Claude Code skill by cloning into the skills directory:
+
+```bash
+# Personal (available across all projects)
+git clone https://github.com/Bingtuu/maieutics.git ~/.claude/skills/maieutics
+
+# Project-local (committed with the repo)
+mkdir -p .claude/skills
+git clone https://github.com/Bingtuu/maieutics.git .claude/skills/maieutics
+```
+
+Then invoke it with `/maieutics` or let Claude trigger it automatically based on the skill description.
+
+### Generic / Other Agents
+
+If your agent does not support a native skill directory, copy the contents of [`SKILL.md`](./SKILL.md) into your system prompt, agent configuration, or custom instructions. Ensure the YAML frontmatter is preserved if your orchestrator supports it.
 
 ### Examples
 

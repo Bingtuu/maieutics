@@ -121,7 +121,7 @@ Skill 将通过 `skills/maieutics/SKILL.md` 自动注册。
 openclaw skills install git:Bingtuu/maieutics
 ```
 
-或通过 ClawHub 安装：
+或通过 ClawHub 安装（发布后即可使用）：
 
 ```bash
 clawhub install Bingtuu/maieutics
@@ -139,9 +139,24 @@ cp -r maieutics /path/to/your/workspace/skills/
 cp -r maieutics ~/.openclaw/skills/
 ```
 
-### Claude Code / 通用方式
+### Claude Code
 
-将 [`SKILL.md`](./SKILL.md) 的内容复制到你的系统提示词、项目的 `CLAUDE.md` 或自定义指令中。如果你的编排器支持，请保留 YAML 前置元数据。
+作为 Claude Code skill 安装，克隆到 skills 目录：
+
+```bash
+# 个人全局（所有项目可用）
+git clone https://github.com/Bingtuu/maieutics.git ~/.claude/skills/maieutics
+
+# 项目本地（随仓库提交）
+mkdir -p .claude/skills
+git clone https://github.com/Bingtuu/maieutics.git .claude/skills/maieutics
+```
+
+然后通过 `/maieutics` 调用，或让 Claude 根据 skill 描述自动触发。
+
+### 通用方式 / 其他 Agent
+
+如果你的 Agent 不支持原生 skill 目录，将 [`SKILL.md`](./SKILL.md) 的内容复制到你的系统提示词、Agent 配置或自定义指令中。如果你的编排器支持，请保留 YAML 前置元数据。
 
 ### 示例
 
