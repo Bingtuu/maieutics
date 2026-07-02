@@ -93,6 +93,20 @@ Even seemingly simple requests ("Should I use React or Vue?") contain hidden pre
 
 ## Installation
 
+### Quick install (any agent)
+
+The fastest way across most skill-compatible agents is [skills.sh](https://skills.sh):
+
+```bash
+npx skills add Bingtuu/maieutics
+```
+
+You can also target a specific agent, scope, and skip confirmations:
+
+```bash
+npx skills add Bingtuu/maieutics -a codex -g -y
+```
+
 ### Superpowers
 
 Recommended — uses the universal skills installer:
@@ -150,6 +164,93 @@ git clone https://github.com/Bingtuu/maieutics.git .claude/skills/maieutics
 ```
 
 Then invoke it with `/maieutics` or let Claude trigger it automatically based on the skill description.
+
+### OpenAI Codex
+
+Install via skills.sh:
+
+```bash
+npx skills add Bingtuu/maieutics -a codex -g -y
+```
+
+Or install manually:
+
+```bash
+# Personal
+git clone https://github.com/Bingtuu/maieutics.git ~/.codex/skills/maieutics
+# or: ~/.agents/skills/maieutics
+
+# Project-local
+mkdir -p .codex/skills
+git clone https://github.com/Bingtuu/maieutics.git .codex/skills/maieutics
+```
+
+Invoke with `$maieutics` or let Codex activate it automatically.
+
+### Cursor
+
+Cursor discovers skills from `.cursor/skills/` (project) or `~/.cursor/skills/` (global). Project-local is most common:
+
+```bash
+mkdir -p .cursor/skills
+git clone https://github.com/Bingtuu/maieutics.git .cursor/skills/maieutics
+```
+
+Restart Cursor or reload the window. Then type `/maieutics` in Agent chat or let Cursor auto-load it.
+
+### Gemini CLI
+
+Install via the CLI:
+
+```bash
+gemini skills install https://github.com/Bingtuu/maieutics.git
+```
+
+Or install manually:
+
+```bash
+# Personal
+git clone https://github.com/Bingtuu/maieutics.git ~/.gemini/skills/maieutics
+
+# Project-local
+mkdir -p .gemini/skills
+git clone https://github.com/Bingtuu/maieutics.git .gemini/skills/maieutics
+```
+
+Activate with `/skills` or let Gemini prompt you when the task matches the skill description.
+
+### Kimi Code CLI
+
+Install manually:
+
+```bash
+# Project-local
+mkdir -p .skills
+git clone https://github.com/Bingtuu/maieutics.git .skills/maieutics
+
+# Or user-global
+mkdir -p ~/.kimi/skills
+git clone https://github.com/Bingtuu/maieutics.git ~/.kimi/skills/maieutics
+```
+
+Restart Kimi or start a new session. The skill will be discovered from its description.
+
+### GitHub Copilot
+
+Install via GitHub CLI (v2.90+):
+
+```bash
+gh skill install Bingtuu/maieutics
+```
+
+Or install manually for project-level use:
+
+```bash
+mkdir -p .github/skills
+git clone https://github.com/Bingtuu/maieutics.git .github/skills/maieutics
+```
+
+Copilot auto-discovers `.github/skills/<name>/SKILL.md` in VS Code, Copilot CLI, and agent mode.
 
 ### Generic / Other Agents
 

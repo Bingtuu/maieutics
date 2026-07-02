@@ -96,6 +96,20 @@ maieutics/
 
 ## 安装方式
 
+### 快速安装（任意 Agent）
+
+对大多数支持 skill 的 Agent，最快的方式是使用 [skills.sh](https://skills.sh) 通用安装器：
+
+```bash
+npx skills add Bingtuu/maieutics
+```
+
+也可以指定 Agent、作用域并跳过确认：
+
+```bash
+npx skills add Bingtuu/maieutics -a codex -g -y
+```
+
 ### Superpowers
 
 推荐方式 —— 使用通用 skills 安装器：
@@ -153,6 +167,93 @@ git clone https://github.com/Bingtuu/maieutics.git .claude/skills/maieutics
 ```
 
 然后通过 `/maieutics` 调用，或让 Claude 根据 skill 描述自动触发。
+
+### OpenAI Codex
+
+通过 skills.sh 安装：
+
+```bash
+npx skills add Bingtuu/maieutics -a codex -g -y
+```
+
+或手动安装：
+
+```bash
+# 个人全局
+git clone https://github.com/Bingtuu/maieutics.git ~/.codex/skills/maieutics
+# 或：~/.agents/skills/maieutics
+
+# 项目本地
+mkdir -p .codex/skills
+git clone https://github.com/Bingtuu/maieutics.git .codex/skills/maieutics
+```
+
+通过 `$maieutics` 调用，或让 Codex 自动激活。
+
+### Cursor
+
+Cursor 从 `.cursor/skills/`（项目）或 `~/.cursor/skills/`（全局）发现 skill。项目本地最常见：
+
+```bash
+mkdir -p .cursor/skills
+git clone https://github.com/Bingtuu/maieutics.git .cursor/skills/maieutics
+```
+
+重启 Cursor 或重载窗口。然后在 Agent 聊天中输入 `/maieutics`，或让 Cursor 自动加载。
+
+### Gemini CLI
+
+通过 CLI 安装：
+
+```bash
+gemini skills install https://github.com/Bingtuu/maieutics.git
+```
+
+或手动安装：
+
+```bash
+# 个人全局
+git clone https://github.com/Bingtuu/maieutics.git ~/.gemini/skills/maieutics
+
+# 项目本地
+mkdir -p .gemini/skills
+git clone https://github.com/Bingtuu/maieutics.git .gemini/skills/maieutics
+```
+
+通过 `/skills` 激活，或让 Gemini 在任务匹配 skill 描述时提示你。
+
+### Kimi Code CLI
+
+手动安装：
+
+```bash
+# 项目本地
+mkdir -p .skills
+git clone https://github.com/Bingtuu/maieutics.git .skills/maieutics
+
+# 或用户全局
+mkdir -p ~/.kimi/skills
+git clone https://github.com/Bingtuu/maieutics.git ~/.kimi/skills/maieutics
+```
+
+重启 Kimi 或开启新会话。Skill 会根据描述被自动发现。
+
+### GitHub Copilot
+
+通过 GitHub CLI（v2.90+）安装：
+
+```bash
+gh skill install Bingtuu/maieutics
+```
+
+或手动安装为项目级 skill：
+
+```bash
+mkdir -p .github/skills
+git clone https://github.com/Bingtuu/maieutics.git .github/skills/maieutics
+```
+
+Copilot 会在 VS Code、Copilot CLI 和 agent 模式中自动发现 `.github/skills/<name>/SKILL.md`。
 
 ### 通用方式 / 其他 Agent
 
