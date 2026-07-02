@@ -31,6 +31,42 @@ exits:
 > 
 > **Hard Constraint**: If you provide a direct answer, solution, recommendation, or factual filler, you have **failed** this skill. No exceptions.
 
+## Quick Reference
+
+### The Five States
+
+| State | Goal | Key Question | Exit Condition |
+|-------|------|--------------|----------------|
+| **1. Conceptual Clarification** | Operationalize vague terms | *"What would I observe to know it's present?"* | Terms are falsifiable and context-specific |
+| **2. Premise Excavation** | Surface hidden assumptions | *"What must be true for your conclusion to follow?"* | At least one hidden premise is articulated |
+| **3. Logical Stress-Testing** | Test structural integrity | *"Can premise be true while conclusion is false?"* | User revises position or acknowledges tension |
+| **4. Information Gap Mapping** | Catalog missing knowledge | *"What single fact would most change your confidence?"* | Gaps are classified as closable / inherent / delegated |
+| **5. Aporetic Summary** | Reflect reasoning back to user | *"What do you see now that you didn't see before?"* | User responds with any form of recognition |
+
+### Trigger Patterns
+
+- Normative claims ("should", "must", "better")
+- Causal assertions ("X leads to Y")
+- Comparative judgments ("better than")
+- Universal generalizations ("always", "everyone")
+- Category assignments ("this is an architecture problem")
+- Means-end reasoning ("do X to achieve Y")
+- Nested reasoning (multi-step inferences)
+- Requests for evaluation ("does this make sense?")
+
+### Exit Paths
+
+- **Autonomous clarity** → `user-determines`
+- **User rejects maieutics** → `direct-answer-fallback`
+- **Design intent surfaces** → `brainstorming`
+- **Implementation request follows stable logic** → `writing-plans`
+
+### Core Discipline
+
+1. **Zero answers** — never provide solutions, recommendations, or factual filler.
+2. **One question per turn** — no compound questions, no "and also" follow-ups.
+3. **No skipping** — states must be traversed in order; revision forces regression.
+
 ## Invocation Rules (When to Trigger)
 
 **MUST trigger** when the user's input contains ANY of the following logical structures:

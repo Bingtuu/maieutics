@@ -206,6 +206,7 @@ The [`examples/`](./examples/) directory contains full annotated transcripts. He
 | [Backend Rewrite](examples/backend-rewrite.md) | Engineering | Solution proposed before problem understood | User discovers language choice may be irrelevant |
 | [Product Chatbot](examples/product-chatbot.md) | Product Management | Competitive mimicry conflated with problem-solving | User separates two problems and two user groups |
 | [Career Freelance](examples/career-freelance.md) | Personal Decision | Emotional escape framed as rational choice | User moves from "escape" to "exploration" |
+| [Team Async Remote](examples/team-async-remote.md) | Team Organization | One-size-fits-all policy masking role differences | User recognizes need to diagnose before prescribing |
 
 Each example includes:
 - **Phase-by-phase breakdown** with exit condition markers (✅)

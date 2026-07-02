@@ -7,6 +7,7 @@ Real-world Maieutics sessions demonstrating the skill across different domains.
 | [Backend Rewrite](backend-rewrite.md) | Engineering | Solution proposed before problem understood | User discovers language choice may be irrelevant |
 | [Product Chatbot](product-chatbot.md) | Product Management | Competitive mimicry conflated with problem-solving | User separates two problems and two user groups |
 | [Career Freelance](career-freelance.md) | Personal Decision | Emotional escape framed as rational choice | User moves from "escape" to "exploration" |
+| [Team Async Remote](team-async-remote.md) | Team Organization | One-size-fits-all policy masking role differences | User recognizes need to diagnose before prescribing |
 
 ## Contributing Examples
 

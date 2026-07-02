@@ -206,6 +206,7 @@ Maieutics 是一个**五阶段循环状态机**。每个阶段都有严格的进
 | [后端重写](examples/backend-rewrite.md) | 工程 | 在理解问题之前就提出解决方案 | 用户发现语言选择可能 irrelevant |
 | [产品聊天机器人](examples/product-chatbot.md) | 产品管理 | 竞争性模仿与真正的问题解决混淆 | 用户分离了两个问题和两个用户群体 |
 | [职业自由职业](examples/career-freelance.md) | 个人决策 | 情感性逃避被包装成理性选择 | 用户从"逃避"转向"探索" |
+| [团队异步远程](examples/team-async-remote.md) | 团队组织 | 一刀切政策掩盖了角色差异 | 用户认识到需要先诊断再开方 |
 
 每个示例都包含：
 - **分阶段拆解**及退出条件标记（✅）
