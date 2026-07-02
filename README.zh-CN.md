@@ -98,24 +98,50 @@ maieutics/
 
 ### Superpowers
 
+推荐方式 —— 使用通用 skills 安装器：
+
+```bash
+npx skills add https://github.com/Bingtuu/maieutics --skill maieutics
+```
+
+手动备选（仅复制 skill 文件，不包含 hooks 和 bootstrap 引导配置）：
+
 ```bash
 cd your-superpowers-project/skills/
-git clone https://github.com/yourusername/maieutics.git
+git clone https://github.com/Bingtuu/maieutics.git
 ```
 
 Skill 将通过 `skills/maieutics/SKILL.md` 自动注册。
 
 ### OpenClaw / ClawHub
 
+直接从 Git 安装：
+
 ```bash
-claw skill add maieutics
-# 或手动：
-cp maieutics/SKILL.md ~/.claw/skills/maieutics/
+openclaw skills install git:Bingtuu/maieutics
+```
+
+或通过 ClawHub 安装：
+
+```bash
+clawhub install Bingtuu/maieutics
+# 或未安装 CLI 时：
+npx clawhub@latest install Bingtuu/maieutics
+```
+
+手动备选：
+
+```bash
+git clone https://github.com/Bingtuu/maieutics.git
+# 项目本地：
+cp -r maieutics /path/to/your/workspace/skills/
+# 或全局安装：
+cp -r maieutics ~/.openclaw/skills/
 ```
 
 ### Claude Code / 通用方式
 
-将 [`SKILL.md`](./SKILL.md) 的内容复制到你的系统提示词或自定义指令中。如果你的编排器支持，请保留 YAML 前置元数据。
+将 [`SKILL.md`](./SKILL.md) 的内容复制到你的系统提示词、项目的 `CLAUDE.md` 或自定义指令中。如果你的编排器支持，请保留 YAML 前置元数据。
 
 ### 示例
 

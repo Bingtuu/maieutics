@@ -95,24 +95,50 @@ Even seemingly simple requests ("Should I use React or Vue?") contain hidden pre
 
 ### Superpowers
 
+Recommended — uses the universal skills installer:
+
 ```bash
-cd your-superpowers-project/skills/
-git clone https://github.com/yourusername/maieutics.git
+npx skills add https://github.com/Bingtuu/maieutics --skill maieutics
 ```
 
-The skill will auto-register via `skills/maieutics/SKILL.md`.
+Manual fallback (copies only the skill files; hooks and bootstrap setup are not included):
+
+```bash
+cd your-superpowers-project/skills/
+git clone https://github.com/Bingtuu/maieutics.git
+```
+
+The skill auto-registers via `skills/maieutics/SKILL.md`.
 
 ### OpenClaw / ClawHub
 
+Install directly from Git:
+
 ```bash
-claw skill add maieutics
-# or manually:
-cp maieutics/SKILL.md ~/.claw/skills/maieutics/
+openclaw skills install git:Bingtuu/maieutics
+```
+
+Or install via ClawHub:
+
+```bash
+clawhub install Bingtuu/maieutics
+# or, without the CLI installed:
+npx clawhub@latest install Bingtuu/maieutics
+```
+
+Manual fallback:
+
+```bash
+git clone https://github.com/Bingtuu/maieutics.git
+# project-local:
+cp -r maieutics /path/to/your/workspace/skills/
+# or global:
+cp -r maieutics ~/.openclaw/skills/
 ```
 
 ### Claude Code / Generic
 
-Copy the contents of [`SKILL.md`](./SKILL.md) into your system prompt or custom instructions. Ensure the YAML frontmatter is preserved if your orchestrator supports it.
+Copy the contents of [`SKILL.md`](./SKILL.md) into your system prompt, project `CLAUDE.md`, or custom instructions. Ensure the YAML frontmatter is preserved if your orchestrator supports it.
 
 ### Examples
 
