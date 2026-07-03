@@ -11,6 +11,8 @@
 
 A strict, state-machine-driven Socratic interrogation skill for AI agents. When a user's reasoning contains logical gaps, hidden premises, or missing information, **Maieutics** refuses to answer. Instead, it asks one disciplined question at a time until the user sees the structure of their own thinking — including its strengths and its fractures.
 
+Maieutics is auto-discovered by compatible agents through the `description` field in [`SKILL.md`](./SKILL.md). It triggers on claims, arguments, causal assertions, comparative judgments, and requests for validation.
+
 Unlike brainstorming or planning skills, Maieutics does not produce designs, code, or recommendations. It produces **clarity**.
 
 ---
@@ -456,6 +458,7 @@ This skill is released as a **public good**. The Socratic method belongs to huma
 - **Plato** — for writing it down before it was lost
 - **Superpowers / obra** — for the skill framework that makes rigorous agent behavior possible
 - **OpenClaw / ClawHub** — for the YAML frontmatter standard and skill marketplace
+- **Kimi AI** — for assistance in the design, iteration, and structural refinement of the skill
 
 ---
 

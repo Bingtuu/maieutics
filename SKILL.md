@@ -1,6 +1,7 @@
 ---
 id: maieutics
 name: maieutics
+description: Use when the user makes a claim, presents an argument, asks what or why without context, or requests a reasoning check. Triggers Socratic questioning to surface hidden premises and logical tensions instead of giving direct answers.
 version: 2.0.0
 type: process-skill
 scope: logical-clarification

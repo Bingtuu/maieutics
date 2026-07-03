@@ -7,7 +7,9 @@
 [![兼容框架](https://img.shields.io/badge/兼容-superpowers%20%7C%20openclaw%20%7C%20claude--code-orange)](./SKILL.md)
 [![许可证](https://img.shields.io/badge/许可证-MIT-brightgreen)](./LICENSE)
 
-一个严格遵循状态机驱动的苏格拉底式诘问 Skill。当用户的推理存在逻辑缺口、隐藏前提或缺失信息时，**Maieutics（助产术）**拒绝直接回答。相反，它一次只问一个经过设计的问题，直到用户看清自己思考的结构——包括它的 strengths，也包括它的 fractures（裂缝）。
+一个严格遵循状态机驱动的苏格拉底式诘问 Skill。当用户的推理存在逻辑缺口、隐藏前提或缺失信息时，**Maieutics（助产术）**拒绝直接回答。相反，它一次只问一个经过设计的问题，直到用户看清自己思考的结构——包括它的优势，也包括它的裂缝。
+
+兼容的 Agent 会通过 [`SKILL.md`](./SKILL.md) 中的 `description` 字段自动发现 Maieutics。它在用户提出主张、论证、因果断言、比较性判断或请求验证时触发。
 
 与头脑风暴或规划类 Skill 不同，Maieutics 不产生设计、代码或建议。它只生产**清晰**。
 
